@@ -1668,6 +1668,10 @@
 
         _.$slidesCache = _.$slides;
 
+        _.$slides.each(function(index, element) {
+	        	$(element).attr('data-slick-index', index);
+	        });
+	        
         _.reinit();
 
     };
